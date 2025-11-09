@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Curriculum from './components/Curriculum';
 import Playground from './components/Playground';
-import FAQ from './components/FAQ';
 
 function App() {
   const [selected, setSelected] = React.useState('python');
@@ -24,7 +23,6 @@ function App() {
           if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }} />
         <Playground selected={selected} />
-        <FAQ />
       </main>
       <footer className="border-t border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-600 flex items-center justify-between">
